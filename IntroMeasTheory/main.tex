@@ -23,6 +23,9 @@
 \subsection*{Acknowledgments}
 \textsc{Thanks} to Evan Chen, whose \LaTeX  -style I am using. My approach to the subject is inspired by Professors Wenjia Jing and Robert Fefferman, from whom I learned measure theory. Other 
 
+
+
+% SECTION 1
 \section{Measure Spaces}
 
 Try to recall how you had to compute areas for the first time in elementary school - you likely had an exercise of an irregular shape that you could decompose into subsets whose area you already knew. You might have also had such  computation tasks for which it was easiest to calculate the area of a shape that contained the object of interest, and subtract those smaller chunks from this larger area that did not belong to the shape of interest. 
@@ -104,10 +107,6 @@ Let X be a metric space, and let $\mathcal{O}$ denote the collection of open set
 
 
 
-
-
-
-
 \begin{definition}[Measurable space]
 A pair ($X,\mathcal{S}$) with X nonempty, $\mathcal{S}$ a $\sigma$-algebra on X is called a \vocab{measurable space}.
 \end{definition}
@@ -135,6 +134,34 @@ If $\mu(X)=1$, then we may say $\mu$ is a probability measure, and the triple ($
 \begin{example}
 If for all $B \subset \mathbb{N}$, $\mu(B) = |B|$, where $|B|$ denotes the number of elements in $B$, then the triple  ($\mathbb{N},\mathcal{P}(\mathbb{N}),\mu$) is a measure space, and we call $\mu$ the counting measure.
 \end{example}{}
+
+The following definition is incredible important and you will encounter it in many applications:
+
+\begin{definition}[P holds almost everywhere]
+Let ($X,\mathcal{S},\mu$) be a measure space. We say the property \vocab{P holds almost everywhere} in X (sometimes written as a.e.) if there is a set N with $\mu(N) = 0 $ such that P holds for all $x \in X - N$.
+\end{definition}
+
+\begin{remark}\label{rem:ae}
+Note that at first glance, a more intuitive definition might be that P holds almost everywhere if  $\mu(\{x: \text{P does not hold}\}) = 0$. However, this definition only works if the set in question is actually measurable, i.e. $\{x: \text{P does not hold}\} \in \mathcal S $.
+\end{remark}
+
+\begin{definition}
+Let ($X,\mathcal{S},\mu$) be a measure space.
+A set $N \in \mathcal S$ such that $\mu(N) = 0$ is called a \vocab{null set}.
+A set $M$ with $M \subset N$ for some null set $N$ is called a \vocab{negligible set}.
+If all negligible sets are measurable, i.e. $M \in mathcal S$ (and hence $\mu(M) = 0$, we say the measure space is complete.
+\end{definition}
+
+\begin{remark}\label{rem:aectd}
+In this new language, we say P holds almost everywhere if the set on which it does not hold is negligible.
+In some applications, the term 'almost surely' (a.s.) is used instead of almost everywhere.
+\end{remark}
+
+%\begin{example}
+%To illustrate the concept, let's look at the property of a real-valued function $f: \mathbb R \rightarrow \mathbb R$ being continuous almost everywhere:
+
+%Recall that f is continuous
+%\end{example}
 
 \begin{exercise}
 Let ($X,\mathcal{S},\mu$) be a measure space. Prove the following:
@@ -197,6 +224,7 @@ Why is this result so useful in probability applications? Think of the $E_n$ as 
 \end{example}
 
 
+
 \begin{theorem}[Existence of non-measurable sets]
 Assume the axiom of choice. There is no translation-invariant measure on ($\mathbb{R},\mathcal{P}(\mathbb{R})$)!
 \end{theorem}
@@ -210,6 +238,11 @@ Informally: One can divide the unit sphere  $S \in \mathbb{R}^3$ into finitely m
 
 
 
+
+
+
+
+% SECTION 2
 
 \section{Construction of Lebesgue Measure}
 The preceding results show us that we cannot generally find a measure on a given $\sigma$-algebra. In particular, there are sets that defy the intuitive concepts of length or volume. Instead of giving up the concept of measure, we turn back to $\sigma$-algebras. We want to find $\sigma$-algebras for which there are well-defined measures that correspond to our intuitive notions of length, area and volume (and probability!). This means we purposefully declare some sets non-measurable, and exclude them from our measures' domain. At the same-time, we do not want to discard too many sets. 
@@ -395,6 +428,10 @@ $\delta_0(A) = \begin{cases}
 \end{example}{}
 
 
+
+
+% SECTION 3
+
 \section{Measurable Functions}
 In the last section, we have shown that we can indeed find a 'sufficiently large' $\sigma$-algebra to define a measure on. 
 The next big project we will be working on is to generalize our notion of integrability: Recall that for traditional Riemann integrals of a function f, we partitioned the domain into small intervals, and defined step functions that would be greater (lower) than the function f on each interval. We called the infimum (supremum) of these the upper (lower) Riemann sum. We called the function Riemann-integrable if the lower and upper sums coincide. 
@@ -572,6 +609,11 @@ Now for general f, note that we can decompose $f = \max(0,f) + \min(0,f)= \max(0
 \begin{exercise}
 Prove (4).
 \end{exercise}
+
+
+
+
+% SECTION 4
 
 \section{Lebesgue Integration} 
 
@@ -811,6 +853,9 @@ Hence $ \limsup_{n \rightarrow \infty}  \int_E f_n d\mu \leq \int_E f d\mu \leq 
 If $f\in \mathscr{L}^1(\mu,E)$, then f is finite almost everywhere on E.
 \end{exercise}
 
+
+
+% SECTION 5
 
 \section{Introduction to measure-theoretic probability}
 
