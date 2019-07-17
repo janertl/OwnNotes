@@ -256,11 +256,13 @@ We start the construction by defining a so called pre-measure on an algebra. You
 $\nu: \mathcal{A} \rightarrow [0,\infty]$ is called a \vocab{pre-measure} if it satisfies:
 \begin{itemize}
 \item[(i)] $\nu(\emptyset) = 0 $
-\item[(ii)] $\nu(\bigcup_{n\in \mathbb{N}} A_n) = \sum_{n\in \mathbb{N}} \nu(A_n)$ for $\{A_n\}\subset \mathcal{A}$, pairwise disjoint 
+\item[(ii)] $\nu(\bigcup_{n = 1}^\infty A_n) = \sum_{n = 1}^\infty \nu(A_n)$ for $\{A_n\}\subset \mathcal{A}$, pairwise disjoint 
 \end{itemize}
+whenever these expressions are well-defined, i.e. the elements we take the pre-measure of are in the domain, $\mathscr{A}$.
 \end{definition}
 
-In one dimension, finding a 
+Note that a pre-measure is almost a measure! The key difference is only that the domain it is defined on, $\mathscr{A}$ is not necessarily a $\sigma$-algebra. In particular, note that in condition (ii), $\nu(\bigcup_{n = 1}^\infty A_n)$ might not be defined since unless $\mathscr{A}$ is already a $\sigma$-algebra
+
 \begin{example}[Application to Lebesgue measure on $\mathbb{R}$]
 For Lebesgue measure, we will take $\mathcal{A} = \{A: A $ is a finite disjoint union of intervals of the form (a,b], (-$\infty$, b], and (a,$\infty$) $\}$. 
 It was already an exercise to show that this is an algebra. It is easy to see that $\nu$ defined by $\nu(A) = \nu(\bigcup_{i=1}^N (a_i,b_i]) = \sum_{i=1}^N (b_i - a_i)$  is a pre-measure.

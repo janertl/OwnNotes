@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1562601391 "main.tex" "main.pdf" "main" 1563151194
-  "/dev/null" 1563151194 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1563378697 "main.tex" "main.pdf" "main" 1563378701
+  "/dev/null" 1563378696 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -229,13 +229,13 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "evan.sty" 1562359044 18280 d8c73730540ce33206a27598a61889f1 ""
-  "main.aux" 1562601394 18543 38e66f29a5a8bde56fa259bccdf4aa74 "pdflatex"
-  "main.out" 1562601392 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1562601391 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1563151189 55324 9b4c8d9a57d56b431fc7b25c0d34192c ""
+  "main.aux" 1563378701 18542 546408097c15c437a6d01ed9de22cd63 "pdflatex"
+  "main.out" 1563378698 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1563378698 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1563378447 55729 95cafca52dbc5b7869f3b7e1ef71f2fa ""
   (generated)
-  "main.out"
-  "main.log"
-  "main.pdf"
-  "main.aux"
   "main.pre"
+  "main.log"
+  "main.aux"
+  "main.out"
+  "main.pdf"
